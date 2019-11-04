@@ -6,7 +6,9 @@
 @import url(http://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900);
 @import url(https://fonts.googleapis.com/css?family=Yellowtail&display=swap>);
 @import url(https://fonts.googleapis.com/css?family=Exo+2:400,700&display=swap&subset=latin-ext);
-
+@import url(https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Caveat:400,700&display=swap&subset=latin-ext);
+@import url(https://fonts.googleapis.com/css?family=Parisienne&display=swap&subset=latin-ext);
 
 /* 
 * BASIC STYLE
@@ -82,7 +84,7 @@ body {
     line-height: 24px;
     color: #323232;
     font-size: 13px;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-weight: 400;
     letter-spacing: 1px;
 }
@@ -278,7 +280,7 @@ p {
 h1, h2, h3, h4, h5, h6 {
     color: #323232;
     text-transform: uppercase;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-weight: 600;
     margin-top: 0px;
     margin-bottom: 10px;
@@ -357,7 +359,7 @@ h1.large {
     font-size: 12px;
     line-height: normal;
     font-weight: 600;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Poppins', sans-serif;
     letter-spacing: 1px;
     text-align: center;
     text-transform: uppercase;
@@ -550,7 +552,7 @@ button, html input[type="button"], input[type="reset"], input[type="submit"] {
 }
 
 button, input, textarea, select {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 12px;
 }
 
@@ -580,7 +582,7 @@ button, input, textarea, select {
 
 input, textarea, select {
     margin-bottom: 20px;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 12px;
 }
 
@@ -1254,7 +1256,6 @@ form label.error {
     .logo a {
         position: relative;
         display: block;
-        height: 21px;
         width: 250px;
         transition: all .3s ease-out;
         -moz-transition: all .3s ease-out;
@@ -1280,13 +1281,21 @@ form label.error {
         }
 
 .logo--name{
-    font-family: 'Exo 2', sans-serif;
-    font-size: 30px;
+    /* font-family: 'Caveat', cursive; */
+    font-family: 'Parisienne', cursive;
+    font-size: 25px;
+    color: aliceblue;
 }
 
-.fixed .logo a {
-    height: 21px;
+.logo--profession{
+    color: aliceblue;
 }
+
+.title--name{
+    font-size: 2rem;
+    font-weight: 400;
+}
+
 
 /*------------------------------------------------------------
     Header Color Setting 
@@ -1998,9 +2007,9 @@ form label.error {
 .intro-content-inner {
     position: absolute;
     height: 100%;
-    width: 54%;
-    top: 300px;
-    left: 150px;
+    width: 74%;
+    top: 345px;
+    left: 295px;
 }
 
 .intro-content-inner .container {
@@ -2009,6 +2018,7 @@ form label.error {
 
 .btn-contact{
     padding-top: 25px;
+    text-align: right;
 }
 
 
