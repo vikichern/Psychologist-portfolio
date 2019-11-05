@@ -114,14 +114,14 @@ a {
     -o-transition: all 0.25s ease 0s;
 }
 
-    a:hover {
-        color: #e6ae49;
-        text-decoration: none;
-        transition: all 0.25s ease 0s;
-        -moz-transition: all 0.25s ease 0s;
-        -webkit-transition: all 0.25s ease 0s;
-        -o-transition: all 0.25s ease 0s;
-    }
+a:hover {
+    color: #e6ae49;
+    text-decoration: none;
+    transition: all 0.25s ease 0s;
+    -moz-transition: all 0.25s ease 0s;
+    -webkit-transition: all 0.25s ease 0s;
+    -o-transition: all 0.25s ease 0s;
+}
 
 .video {
     display: block;
@@ -179,14 +179,14 @@ ul.list-none {
 
 .offer--list li .border-inside{
     background: white;
-    /* border-radius: 0 0.5rem 0.5rem 0.5rem; */
+    
     counter-increment: gradient-counter;
     padding: 0 5px;
     font-size: 16px;
     min-height: 3rem;
     padding: 1rem;
     position: relative;
-    /* box-shadow: 0.125rem 0.1rem 0.2rem rgba(0,0,0,0.05), 0 0.1rem 0.125rem rgba(75,0,0,0.05); */
+  
 }
 
 h3.no-after::after{
@@ -223,26 +223,25 @@ p {
     font-weight: 400;
     margin: 0px 0 10px 0;
     color: #333;
-    /*letter-spacing: 1px;*/
 }
 
-    p.lead, .lead {
-        font-size: 16px;
-        font-weight: 400;
-        line-height: 24px;
-    }
+p.lead, .lead {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
 
-    p.dark, .dark, a.dark, h1.dark, h2.dark, h3.dark, h4.dark, h5.dark, h6.dark {
-        color: #323232 !important;
-    }
+p.dark, .dark, a.dark, h1.dark, h2.dark, h3.dark, h4.dark, h5.dark, h6.dark {
+    color: #323232 !important;
+}
 
-    p.white, .white, a.white, h1.white, h2.white, h3.white, h4.white, h5.white, h6.white {
-        color: #fff !important;
-    }
+p.white, .white, a.white, h1.white, h2.white, h3.white, h4.white, h5.white, h6.white {
+    color: #fff !important;
+}
 
-    p.color, .color, a.color, h1.color, h2.color, h3.color, h4.color, h5.color, h6.color, li.link:hover, li.link a:hover, .color {
-        color: #e6ae49 !important;
-    }
+p.color, .color, a.color, h1.color, h2.color, h3.color, h4.color, h5.color, h6.color, li.link:hover, li.link a:hover, .color {
+    color: #e6ae49 !important;
+}
 
 .gray {
     color: #888;
@@ -262,22 +261,22 @@ p {
     color: #fff;
 }
 
-    .dark-bg h1, .dark-bg h2, .dark-bg h3, .dark-bg h4, .dark-bg h5, .dark-bg h6, .dark-bg p, .dark-bg .link, .dark-bg .container-icon, .dark-bg .page-icon-top {
-        color: #fff;
-    }
+.dark-bg h1, .dark-bg h2, .dark-bg h3, .dark-bg h4, .dark-bg h5, .dark-bg h6, .dark-bg p, .dark-bg .link, .dark-bg .container-icon, .dark-bg .page-icon-top {
+    color: #fff;
+}
 
-        .dark-bg .link:hover, .link:hover {
-            color: #e6ae49;
-        }
+.dark-bg .link:hover, .link:hover {
+    color: #e6ae49;
+}
 
 .gray-bg {
     background: #f7f7f7;
     color: #323232;
 }
 
-    .gray-bg h1, .gray-bg h2, .gray-bg h3, .gray-bg h4, .gray-bg h5, .gray-bg h6, .gray-bg .container-icon {
-        color: #323232;
-    }
+.gray-bg h1, .gray-bg h2, .gray-bg h3, .gray-bg h4, .gray-bg h5, .gray-bg h6, .gray-bg .container-icon {
+    color: #323232;
+}
 
 
 /*Headings Style   ||-----------*/
@@ -3521,7 +3520,6 @@ form label.error {
         color: #8d8d8d;
         cursor: pointer;
         display: inline-block;
-        float: right;
         font-family: "FontAwesome",sans-serif;
         margin: 0;
         outline: 0 none;
@@ -4362,10 +4360,6 @@ ul.project-detail-block, .project-detail-block ul {
         height: 400px;
     }
 
-    .full-intro .hero {
-        /*padding-top: 64px;*/
-    }
-
     .hero {
         padding: 0px;
     }
@@ -4394,8 +4388,6 @@ ul.project-detail-block, .project-detail-block ul {
     border: 2px solid #fff;
 }
 
-.nf-carousel-theme {
-}
 
     .nf-carousel-theme .owl-controls .owl-pagination {
         position: absolute;
