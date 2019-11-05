@@ -279,7 +279,7 @@ p {
 
 h1, h2, h3, h4, h5, h6 {
     color: #323232;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
     margin-top: 0px;
@@ -1296,6 +1296,12 @@ form label.error {
     font-weight: 400;
 }
 
+.white-underline {
+    width: 23%;
+    height: 3px;
+    background-color: #fff;
+    margin: 20px 0;
+}
 
 /*------------------------------------------------------------
     Header Color Setting 
@@ -2007,9 +2013,9 @@ form label.error {
 .intro-content-inner {
     position: absolute;
     height: 100%;
-    width: 74%;
+    width: 70%;
     top: 345px;
-    left: 295px;
+    left: 0;
 }
 
 .intro-content-inner .container {
@@ -2018,7 +2024,7 @@ form label.error {
 
 .btn-contact{
     padding-top: 25px;
-    text-align: right;
+    text-align: left;
 }
 
 
