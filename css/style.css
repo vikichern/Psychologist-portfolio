@@ -7,7 +7,7 @@
 @import url(https://fonts.googleapis.com/css?family=Yellowtail&display=swap>);
 @import url(https://fonts.googleapis.com/css?family=Exo+2:400,700&display=swap&subset=latin-ext);
 @import url(https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap);
-@import url(https://fonts.googleapis.com/css?family=Caveat:400,700&display=swap&subset=latin-ext);
+@import url(https://fonts.googleapis.com/css?family=Oswald:400,700&display=swap&subset=latin-ext);
 @import url(https://fonts.googleapis.com/css?family=Parisienne&display=swap&subset=latin-ext);
 
 /* 
@@ -84,7 +84,7 @@ body {
     line-height: 24px;
     color: #323232;
     font-size: 13px;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Oswald', sans-serif;
     font-weight: 400;
     letter-spacing: 1px;
 }
@@ -179,14 +179,11 @@ ul.list-none {
 
 .offer--list li .border-inside{
     background: white;
-    
     counter-increment: gradient-counter;
-    padding: 0 5px;
+    padding: 0.5rem 1rem;
     font-size: 16px;
     min-height: 3rem;
-    padding: 1rem;
     position: relative;
-  
 }
 
 h3.no-after::after{
@@ -197,6 +194,23 @@ h3.no-after::after{
 border: none;
 text-align: center;
 box-shadow: none;
+}
+
+.offer--title{
+    font-size: 21px;
+    line-height: 30px;
+}
+
+.bg-wheat {
+    background-color: wheat;
+}
+
+.bg-lavender{
+    background-color: lavender;
+}
+
+.bg-thistle {
+    background-color: thistle;
 }
 
 ul.list-none-ib {
@@ -612,7 +626,7 @@ button, input, textarea, select {
 
 input, textarea, select {
     margin-bottom: 20px;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Oswald', sans-serif;
     font-size: 12px;
 }
 
@@ -1312,7 +1326,8 @@ form label.error {
 
 .logo--name{
     /* font-family: 'Caveat', cursive; */
-    font-family: 'Parisienne', cursive;
+    /* font-family: 'Parisienne', cursive; */
+    font-family: 'Oswald', sans-serif;
     font-size: 25px;
     color: aliceblue;
 }
@@ -1321,15 +1336,39 @@ form label.error {
     color: aliceblue;
 }
 
-.title--name{
-    font-size: 2rem;
-    font-weight: 400;
+.logo--profession span{
+    padding: 0 3px;
+    position: relative;
+    background: #555
 }
 
-.white-underline {
+/* .logo--profession span::before{
+    content: '';
+    height: 1px;
+    background: #999;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    z-index: -2;
+} */
+
+.title--name{
+    font-size: 3.5rem;
+    font-weight: 400;
+    line-height: 4rem;
+}
+
+.title--proffesion{
+    font-family: 'Oswald', sans-serif;
+    font-size: 16px;
+}
+
+
+.gray-underline {
     width: 23%;
     height: 3px;
-    background-color: #fff;
+    background-color: #555;
     margin: 20px 0;
 }
 
@@ -2043,8 +2082,8 @@ form label.error {
 .intro-content-inner {
     position: absolute;
     height: 100%;
-    width: 70%;
-    top: 345px;
+    width: 65%;
+    top: 275px;
     left: 0;
 }
 
