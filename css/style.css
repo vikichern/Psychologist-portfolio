@@ -1422,12 +1422,12 @@ form label.error {
         }
 
             .nav-menu > ul > li > a, .header.no-stick.fixed .nav-menu > ul > li > a, .header.fixed.no-stick .nav-menu > ul > li > a {
-                padding: 36px 15px;
+                padding: 36px 10px;
                 display: inline-block;
                 position: relative;
-                font-size: 12px;
+                font-size: 14px;
                 line-height: 1;
-                text-transform: uppercase;
+                /* text-transform: uppercase; */
                 font-weight: 600;
                 transition: all .3s ease-out;
                 -moz-transition: all .3s ease-out;
