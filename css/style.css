@@ -163,9 +163,37 @@ ul.list-inside {
 }
 
 ul.list-none {
-    list-style: none;
+    list-style-type: none;
     padding-left: 0px;
     margin-left: 0;
+}
+
+.offer--list{
+    padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.offer--list li .border-inside{
+    background: white;
+    border-radius: 0 0.5rem 0.5rem 0.5rem;
+    counter-increment: gradient-counter;
+    margin-top: 1rem;
+    padding: 0 5px;
+    font-size: 14px;
+    min-height: 3rem;
+    padding: 1rem 2rem 1rem 2rem;
+    position: relative;
+    box-shadow: 0.25rem 0.25rem 0.6rem rgba(0,0,0,0.05), 0 0.5rem 1.125rem rgba(75,0,0,0.05);
+}
+
+.offer--list li .li-no-border{
+border: none;
+text-align: center;
+box-shadow: none;
 }
 
 ul.list-none-ib {
