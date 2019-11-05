@@ -187,7 +187,10 @@ ul.list-none {
     padding: 1rem;
     position: relative;
     /* box-shadow: 0.125rem 0.1rem 0.2rem rgba(0,0,0,0.05), 0 0.1rem 0.125rem rgba(75,0,0,0.05); */
+}
 
+h3.no-after::after{
+    content: none;
 }
 
 .offer--list li .li-no-border{
@@ -202,10 +205,10 @@ ul.list-none-ib {
     margin-left: 0;
 }
 
-    ul.list-none-ib li, .list-none-ib {
-        list-style: none;
-        display: inline-block;
-    }
+ul.list-none-ib li, .list-none-ib {
+    list-style: none;
+    display: inline-block;
+}
 
 ul.text-cap li, .text-cap {
     text-transform: uppercase;
@@ -219,7 +222,7 @@ p {
     font-size: 14px;
     font-weight: 400;
     margin: 0px 0 10px 0;
-    color: #888;
+    color: #333;
     /*letter-spacing: 1px;*/
 }
 
