@@ -3,13 +3,13 @@
 @import url("./plugin/mediaelementplayer.css");
 @import url("./plugin/colorbox.css");
 @import url("./plugin/jquery.fs.tipper.css");
-@import url(http://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900);
+/* @import url(http://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900);
 @import url(https://fonts.googleapis.com/css?family=Yellowtail&display=swap>);
 @import url(https://fonts.googleapis.com/css?family=Exo+2:400,700&display=swap&subset=latin-ext);
 @import url(https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap);
 @import url(https://fonts.googleapis.com/css?family=Oswald:400,700&display=swap&subset=latin-ext);
-@import url(https://fonts.googleapis.com/css?family=Parisienne&display=swap&subset=latin-ext);
-
+@import url(https://fonts.googleapis.com/css?family=Parisienne&display=swap&subset=latin-ext); */
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Condensed:400,700|Source+Sans+Pro:400,700&display=swap&subset=latin-ext);
 /* 
 * BASIC STYLE
   - General Style    
@@ -84,9 +84,12 @@ body {
     line-height: 24px;
     color: #323232;
     font-size: 13px;
-    font-family: 'Oswald', sans-serif;
+    /* font-family: 'Oswald', sans-serif; */
     font-weight: 400;
     letter-spacing: 1px;
+    font-family: 'Roboto Condensed', sans-serif;
+/* font-family: 'Lato', sans-serif;
+font-family: 'Source Sans Pro', sans-serif; */
 }
 
 img {
@@ -201,16 +204,31 @@ box-shadow: none;
     line-height: 30px;
 }
 
+.offer--box--border{
+    border: 1px solid #fff;
+}
+
+
 .bg-wheat {
-    background-color: wheat;
+    background-color: #A9CBB7;
+    transition: all ease 1.5s;
+    cursor: pointer;
 }
 
 .bg-lavender{
-    background-color: lavender;
+    background-color: #F7FF58;
+    transition: all ease 1.5s;
+    cursor: pointer;
 }
 
 .bg-thistle {
-    background-color: thistle;
+    background-color: #EFECCA;
+    transition: all ease 1s;
+    cursor: pointer;
+}
+
+.bg-wheat:hover, .bg-lavender:hover, .bg-thistle:hover {
+    transform: translateY(20px);
 }
 
 ul.list-none-ib {
@@ -2074,7 +2092,6 @@ form label.error {
 
 .intro-content-inner {
     position: absolute;
-    height: 100%;
     width: 65%;
     top: 275px;
     left: 0;
@@ -4738,3 +4755,34 @@ ul.project-detail-block, .project-detail-block ul {
         visibility: hidden;
     }
 }
+
+
+
+
+/* ABOUT section START */
+#about{
+    padding-top: 0;
+}
+
+.about--text{
+    flex-direction: column;
+}
+
+/* ABOUT section END */
+
+/* QUALIFY section START */
+
+#qualify {
+    background-color: #43444D;
+}
+
+.qualify--title {
+    color: #fff;
+}
+
+.qualify--text {
+    color: #fff;
+}
+
+/* QUALIFY section END */
+
