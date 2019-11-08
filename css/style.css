@@ -87,9 +87,10 @@ body {
     /* font-family: 'Oswald', sans-serif; */
     font-weight: 400;
     letter-spacing: 1px;
-    font-family: 'Roboto Condensed', sans-serif;
+    /* font-family: 'Roboto Condensed', sans-serif; */
 /* font-family: 'Lato', sans-serif;
 font-family: 'Source Sans Pro', sans-serif; */
+font-family: 'Poppins', sans-serif;
 }
 
 img {
@@ -218,9 +219,10 @@ h2 {
 }
 
 h2 .section-title-first-letter {
-    background-color: #555;
+    background-color: #7261A3;;
     color: #fff;
     padding-left: 2px;
+    padding-right: 1px;
 }
 
 h5 img{
@@ -413,10 +415,10 @@ h3 {
     line-height: 32px;
 }
 
-    h3:after {
+    h2:after {
         color: #7261A3;
         content: ".";
-        font-size: 34px;
+        font-size: 75px;
     }
 
 h4 {
