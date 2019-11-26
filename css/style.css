@@ -257,9 +257,22 @@ box-shadow: none;
     position: relative;
     margin: 5px;
     box-sizing: border-box;
+    z-index: 5;
 }   
 
-
+.bg-wheat::before, .bg-lavender::before, .bg-thistle::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #43444D;
+    opacity: 0.3;
+    z-index: -1
+}
 .bg-wheat::after, .bg-lavender::after, .bg-thistle::after{
     content: "Konsultacje psychologiczne / 50 min / 150 zł";
     position: absolute;
@@ -330,7 +343,7 @@ p {
 }
 
 p.lead, .lead {
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 400;
     line-height: 24px;
 }
@@ -501,10 +514,10 @@ h1.large {
     -moz-transition: all 0.3s ease 0s;
     -webkit-transition: all 0.3s ease 0s;
     -o-transition: all 0.3s ease 0s;
-    border-radius: 2px;
+    /* border-radius: 2px;
     -moz-border-radius: 2px;
     -webkit-border-radius: 2px;
-    -o-border-radius: 2px;
+    -o-border-radius: 2px; */
 }
 
     .btn i, button i, i.left {
@@ -4871,6 +4884,39 @@ ul.project-detail-block, .project-detail-block ul {
     }
 }
 
+/* Navbar START */
+.top--navbar {
+    padding: 5px 0 5px 0;
+}
+
+.top--navbar--left {
+    color: #fff;
+}
+.navbar--box{
+   padding: 0 10px;
+   border-left: 1px solid #fff;
+   border-right: 1px solid #fff;
+}
+.navbar--box--right{
+    border-left: none;
+}
+
+.top--navbar--left i {
+    padding-right: 3px
+}
+
+.top--navbar--left i, .top--navbar--contact{
+    color: #fff;
+    font-size: 10px;
+}
+
+.top--navbar--right a{
+    font-size: 10px;
+    padding: 4px;
+}
+/* Navbar END */
+
+
 /* MAIN section START */
 .leaf--icon{
     display: block;
@@ -4933,14 +4979,18 @@ ul.project-detail-block, .project-detail-block ul {
     position: relative;
 }
 
-#service::before{
+#testimonial{
+    position: relative;
+}
+
+#testimonial::before{
     content: "";
     position: absolute;
     width: 100%;
     height: 100%;
     top: 0;
     left: 0;
-    background: url('../img/treeland.jpg') center center no-repeat;
+    background: url('../img/pier.jpg') center center no-repeat;
     background-size: cover;
     background-attachment: fixed;
     opacity: 0.3;
