@@ -77,7 +77,7 @@ body, html {
 
 body {
     line-height: 24px;
-    color: #323232;
+    color: #333;
     font-size: 13px;
     /* font-family: 'Oswald', sans-serif; */
     font-family: 'Open Sans', sans-serif;
@@ -430,6 +430,7 @@ h1 {
     font-size: 43px;
     letter-spacing: 2px;
     line-height: 43px;
+    font-weight: 400;
 }
 
     h1.h1, h2.h2 {
@@ -470,8 +471,8 @@ h3 {
     }
 
     .tree-icon {
-        width: 70px;
-        height: 70px;
+        width: 60px;
+        height: 60px;
         padding: 10px;
         background: url(../img/tree.png) no-repeat center center;
         background-size: cover;
@@ -609,8 +610,8 @@ button {
     }
 
 .btn-white {
-    color: #323232;
-    background: #fff;
+    color: #354576;
+    background-color: #fff;
     border: none;
 }
 
@@ -1408,6 +1409,7 @@ form label.error {
     }
 
 
+
 /*------------------------------------------------------------
     Logo
  ------------------------------------------------------------*/
@@ -1442,8 +1444,9 @@ form label.error {
 .logo--name{
     /* font-family: 'Oswald', sans-serif; */
     font-size: 20px;
-    color: #fff;
-    letter-spacing: .5px
+    /* color: #fff; */
+    letter-spacing: .5px;
+    padding: 0 0 0 10px;
 }
 
 .logo--profession{
@@ -1451,7 +1454,7 @@ form label.error {
 }
 
 .logo--profession span{
-    padding: 0 3px;
+    padding: 0 0 0 10px;
     position: relative;
     background: #fff;
 }
@@ -1480,11 +1483,15 @@ form label.error {
     /* font-size: 16px; */
     flex-direction: column;
     position: relative;
+   
 }
 
 .title--proffesion span {
-    /* background-color: #555;
-    padding-left: 2px; */
+   /* padding-bottom: 15px */
+}
+
+.title--proffesion span:last-child {
+    /* padding-bottom: 0px; */
 }
 
 /* .title--proffesion::before{
@@ -1539,7 +1546,7 @@ form label.error {
 
 .header.header-transparent .nav-menu > ul > li > a,
 .header.header-transparent .nav-icons > * {
-    color: rgba(255,255,255,1);
+    color:#354576;
     transition: all .3s ease-out;
     -moz-transition: all .3s ease-out;
     -o-transition: all .3s ease-out;
@@ -1548,7 +1555,7 @@ form label.error {
 
     .header.header-transparent .nav-menu > ul > li:hover > a,
     .header.header-transparent .nav-icons > *:hover {
-        color: rgba(255,255,255,0.70);
+        color: rgba(39,49,62,0.60);
     }
 
 .logo img.logo-dark {
@@ -1605,6 +1612,10 @@ form label.error {
 /*------------------------------------------------------------
     Navigation Menu 
 ------------------------------------------------------------*/
+#navigation {
+    background-color: #fff;
+}
+
 .nav-menu {
     position: static;
 }
@@ -1623,13 +1634,14 @@ form label.error {
         }
 
             .nav-menu > ul > li > a, .header.no-stick.fixed .nav-menu > ul > li > a, .header.fixed.no-stick .nav-menu > ul > li > a {
-                padding: 36px 10px;
+                padding: 48px 0px 48px 20px;;
                 display: inline-block;
                 position: relative;
                 font-size: 13px;
+                font-weight: 400;
                 line-height: 1;
                 /* text-transform: uppercase; */
-                font-weight: 400;
+                /* font-weight: 400; */
                 transition: all .3s ease-out;
                 -moz-transition: all .3s ease-out;
                 -o-transition: all .3s ease-out;
@@ -1981,7 +1993,7 @@ form label.error {
 .nav-icons {
     font-size: 22px;
     position: relative;
-    padding-left: 10px;
+    /* padding-left: 10px; */
 }
 
     .nav-icons .nav-icon-item {
@@ -2208,14 +2220,15 @@ form label.error {
     height: 100%;
     width: 100%;
     position: relative;
+    
 }
+
 
 .intro-content-inner {
     position: absolute;
     width: 65%;
-    top: 220px;
+    top: 280px;
     left: 0;
-
     z-index: 2;
 }
 
@@ -2237,7 +2250,7 @@ form label.error {
 }
 
 .btn-contact{
-    padding-top: 25px;
+    /* padding-top: 25px; */
     text-align: left;
 }
 
@@ -3241,11 +3254,11 @@ form label.error {
     }
 
     .overlay-dark:before {
-        background-color: rgba(32,32,32,0.4);
+        background-color: rgba(32,32,32,0.6);
     }
 
     .overlay-dark80:before {
-        background-color: rgba(32,32,32,0.8);
+        background-color: rgba(32,32,32,0.6);
     }
 
     .overlay-light:before {
@@ -4899,12 +4912,12 @@ ul.project-detail-block, .project-detail-block ul {
 
 /* Navbar START */
 #top--navbar{
-    background-color: #56636b;
-    border-bottom: 1px solid #fff;
+    /* background-color: #354576; */
+    border-bottom: 0.5px solid #fff;
 }
 
 .top--navbar {
-    padding: 5px 0 5px 0;
+    padding: 15px 0 15px 0;
 }
 
 .top--navbar--left {
@@ -4918,6 +4931,13 @@ ul.project-detail-block, .project-detail-block ul {
 .navbar--box--right{
     border-left: none;
 }
+
+.nav-menu-item a {
+    padding-right: 0;
+    font-weight: 700;
+}
+
+
 
 .top--navbar--left i {
     padding-right: 3px
@@ -4934,6 +4954,14 @@ ul.project-detail-block, .project-detail-block ul {
 
 .top--navbar--right .btn{
     font-size: 10px;
+}
+.top--navbar--right .btn i {
+    color: #fff;
+    font-size: 15px;
+}
+
+.span-first-letter{
+
 }
 /* Navbar END */
 
