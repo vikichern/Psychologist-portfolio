@@ -207,20 +207,12 @@ h2 {
     font-size: 40px;
     letter-spacing: 2px;
     line-height: 75px;
-    margin-bottom: 20px;
-    padding-top: 10px;
+    /* margin-bottom: 20px;
+    padding-top: 10px; */
     position: relative;
+    text-align: center;
 }
 
-.spacer-60::after {
-    content: "";
-    position: absolute;
-    width: 40px;
-    height: 4px;
-    top: 50%;
-    left: 0;
-    background-color:#333;
-}
 
 h2 .section-title-first-letter {
     background-color: #7261A3;;
@@ -230,8 +222,8 @@ h2 .section-title-first-letter {
 }
 
 h5 img{
-    width: 100px;
-    height: 100px;
+    width: 70px;
+    height: 70px;
 }
 
 .offer--list li .li-no-border{
@@ -242,7 +234,8 @@ box-shadow: none;
 .offer--title{
     font-size: 21px;
     line-height: 30px;
-    padding-top: 30px;
+    padding: 20px 0;
+    color: #fff;
 }
 
 .offer--box--border{
@@ -252,15 +245,16 @@ box-shadow: none;
 
 .bg-wheat {
     /* background-color: #A9CBB7; */
-    transition: all ease .5s;
+    /* transition: all ease .5s;
     cursor: pointer;
     position: relative;
     margin: 5px;
     box-sizing: border-box;
-    z-index: 5;
+    z-index: 5; */
+    background-color: #43444D;
 }   
 
-.bg-wheat::before, .bg-lavender::before, .bg-thistle::before{
+/* .bg-wheat::before, .bg-lavender::before, .bg-thistle::before{
     content: '';
     position: absolute;
     top: 0;
@@ -272,8 +266,8 @@ box-shadow: none;
     background-color: #43444D;
     opacity: 0.3;
     z-index: -1
-}
-.bg-wheat::after, .bg-lavender::after, .bg-thistle::after{
+} */
+/* .bg-wheat::after, .bg-lavender::after, .bg-thistle::after{
     content: "Konsultacje psychologiczne / 50 min / 150 zł";
     position: absolute;
     display: flex;
@@ -286,7 +280,7 @@ box-shadow: none;
     width: 100%;
     background-color: #43444D;
     color: #fff; 
-}
+} */
 .bg-lavender::after{
     content: "Psychoterapia indywidualna / 50 min / 150 zł";
 }
@@ -336,14 +330,14 @@ ul.text-cap li, .text-cap {
 
 p {
     line-height: 20px;
-    font-size: 14px;
+    font-size: 13px;
     font-weight: 400;
     margin: 0px 0 10px 0;
     color: #333;
 }
 
 p.lead, .lead {
-    font-size: 14px;
+    font-size: 13px;
     font-weight: 400;
     line-height: 24px;
 }
@@ -429,13 +423,13 @@ h1, h2, h3, h4, h5, h6 {
     text-transform: uppercase;
     font-weight: 600;
     margin-top: 0px;
-    margin-bottom: 10px;
+    margin-bottom: 0px;
 }
 
 h1 {
     font-size: 43px;
     letter-spacing: 2px;
-    line-height: 40px;
+    line-height: 43px;
 }
 
     h1.h1, h2.h2 {
@@ -449,9 +443,9 @@ h1 {
 }
 
 h2 {
-   
-    letter-spacing: 2px;
     
+    letter-spacing: 2px;
+    position: relative;
     margin-bottom: 20px;
     padding-top: 10px;
 }
@@ -462,12 +456,28 @@ h3 {
     line-height: 32px;
 }
 
-    h2:after {
-        color: #7261A3;
-        content: ".";
-        font-size: 75px;
+    h2::after {
+        /* content: "";
+        position: absolute;
+        background: url(../img/tree.png) no-repeat center center;
+        background-size: cover; */
+        /* width: 20px;
+        height: 100%; */
     }
 
+    .tree-icon-box {
+        display: inline-block;
+    }
+
+    .tree-icon {
+        width: 70px;
+        height: 70px;
+        padding: 10px;
+        background: url(../img/tree.png) no-repeat center center;
+        background-size: cover;
+    }
+
+    
 h4 {
     font-size: 17px;
     letter-spacing: 2px;
@@ -600,7 +610,7 @@ button {
 
 .btn-white {
     color: #323232;
-    background: rgba(255,255,255,1);
+    background: #fff;
     border: none;
 }
 
@@ -1431,18 +1441,19 @@ form label.error {
 
 .logo--name{
     /* font-family: 'Oswald', sans-serif; */
-    font-size: 25px;
-    color: aliceblue;
+    font-size: 20px;
+    color: #fff;
+    letter-spacing: .5px
 }
 
 .logo--profession{
-    color: aliceblue;
+    /* color: #43444D; */
 }
 
 .logo--profession span{
     padding: 0 3px;
     position: relative;
-    background: #555
+    background: #fff;
 }
 
 /* .logo--profession span::before{
@@ -1466,7 +1477,7 @@ form label.error {
 
 .title--proffesion{
     /* font-family: 'Oswald', sans-serif; */
-    font-size: 16px;
+    /* font-size: 16px; */
     flex-direction: column;
     position: relative;
 }
@@ -1615,7 +1626,7 @@ form label.error {
                 padding: 36px 10px;
                 display: inline-block;
                 position: relative;
-                font-size: 14px;
+                font-size: 13px;
                 line-height: 1;
                 /* text-transform: uppercase; */
                 font-weight: 400;
@@ -2420,7 +2431,7 @@ form label.error {
     }
 
 .footer .link a {
-    font-size: 14px;
+    font-size: 13px;
     font-weight: 400;
     /*text-transform: uppercase;*/
     letter-spacing: 0;
@@ -2681,13 +2692,15 @@ form label.error {
 }
 
 .contact-box-left {
-    padding-left: 45px;
-    text-align: left;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
 }
 
 .contact-icon-left, .contact-icon-top {
     font-size: 30px;
-    position: absolute;
+    text-align: center;
 }
 
 .contact-icon-top {
@@ -3826,7 +3839,7 @@ form label.error {
                 width: 36px;
                 line-height: 36px;
                 text-align: center;
-                font-size: 14px;
+                font-size: 13px;
             }
 
             .pagination-nav ul li.active a {
@@ -4885,6 +4898,11 @@ ul.project-detail-block, .project-detail-block ul {
 }
 
 /* Navbar START */
+#top--navbar{
+    background-color: #56636b;
+    border-bottom: 1px solid #fff;
+}
+
 .top--navbar {
     padding: 5px 0 5px 0;
 }
@@ -4893,9 +4911,9 @@ ul.project-detail-block, .project-detail-block ul {
     color: #fff;
 }
 .navbar--box{
-   padding: 0 10px;
-   border-left: 1px solid #fff;
-   border-right: 1px solid #fff;
+   padding: 0 20px 0 0;
+   /* border-left: 1px solid #fff;
+   border-right: 1px solid #fff; */
 }
 .navbar--box--right{
     border-left: none;
@@ -4911,8 +4929,11 @@ ul.project-detail-block, .project-detail-block ul {
 }
 
 .top--navbar--right a{
-    font-size: 10px;
     padding: 4px;
+}
+
+.top--navbar--right .btn{
+    font-size: 10px;
 }
 /* Navbar END */
 
@@ -4970,8 +4991,19 @@ ul.project-detail-block, .project-detail-block ul {
     width: 100%;
 }
 
+#contact-section .container, #contact-section .row {
+    padding: 0;
+    margin: 0
+}
+
+#contact-section .row, #contact-section iframe {
+    width: 100%;
+    height: 100%;
+}
+
 #contact-section h6, #contact-section p {
     color: #fff !important;
+    margin: 5px 0;
 }
 
 /* SECTION Service - Komu Pomagam START */
