@@ -83,7 +83,7 @@ body {
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     letter-spacing: 1px;
-  
+    background-color: #DBD8D7;
 }
 
 img {
@@ -1634,7 +1634,7 @@ form label.error {
         }
 
             .nav-menu > ul > li > a, .header.no-stick.fixed .nav-menu > ul > li > a, .header.fixed.no-stick .nav-menu > ul > li > a {
-                padding: 48px 0px 48px 20px;;
+                padding: 40px 0px 40px 20px;;
                 display: inline-block;
                 position: relative;
                 font-size: 13px;
