@@ -78,12 +78,12 @@ body, html {
 body {
     line-height: 24px;
     color: #333;
-    font-size: 13px;
+    font-size: 15px;
     /* font-family: 'Oswald', sans-serif; */
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     letter-spacing: 1px;
-    background-color: #DBD8D7;
+    
 }
 
 img {
@@ -188,7 +188,7 @@ ul.list-none {
     /* background: white; */
     counter-increment: gradient-counter;
     padding: 0.5rem 1rem 0 0;
-    font-size: 16px;
+    font-size: 14px;
     min-height: 3rem;
     position: relative;
 }
@@ -203,7 +203,7 @@ h3.no-after::after{
 }
 
 h2 {
-    color: #555;
+    color: #354576;
     font-size: 40px;
     letter-spacing: 2px;
     line-height: 75px;
@@ -238,10 +238,38 @@ box-shadow: none;
     color: #fff;
 }
 
-.offer--box--border{
-    /* border: 1px solid #fff; */
+.offer--pricing{
+    font-size: 14px;
+    padding: 20px 0;
+    color: #fff;
+    font-weight: 600;
 }
 
+.offer--box--border1, .offer--box--border2, .offer--box--border3{
+    /* border: 1px solid #fff; */
+    position: relative;
+   
+}
+
+.offer--box--border1::after, .offer--box--border2::after, .offer--box--border3::after{
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 10%;
+    background-color: #354576;
+   
+}
+.offer--content {
+    min-height: 350px;
+    margin-bottom: 10px;
+}
+
+.offer--content, .offer--title {
+    border-left: 1px solid #f1f1f1;
+    border-right: 1px solid #f1f1f1;
+}
 
 .bg-wheat {
     /* background-color: #A9CBB7; */
@@ -329,17 +357,18 @@ ul.text-cap li, .text-cap {
 }
 
 p {
-    line-height: 20px;
-    font-size: 13px;
+    line-height: 24px;
+    font-size: 15px;
     font-weight: 400;
     margin: 0px 0 10px 0;
     color: #333;
 }
 
 p.lead, .lead {
-    font-size: 13px;
+    font-size: 15px;
     font-weight: 400;
     line-height: 24px;
+    padding: 0 20px;
 }
 
 p.dark, .dark, a.dark, h1.dark, h2.dark, h3.dark, h4.dark, h5.dark, h6.dark {
@@ -421,15 +450,15 @@ p.color, .color, a.color, h1.color, h2.color, h3.color, h4.color, h5.color, h6.c
 h1, h2, h3, h4, h5, h6 {
     color: #323232;
     text-transform: uppercase;
-    font-weight: 600;
+    font-weight: 400;
     margin-top: 0px;
     margin-bottom: 0px;
 }
 
 h1 {
-    font-size: 43px;
+    font-size: 50px;
     letter-spacing: 2px;
-    line-height: 43px;
+    line-height: 50px;
     font-weight: 400;
 }
 
@@ -447,8 +476,7 @@ h2 {
     
     letter-spacing: 2px;
     position: relative;
-    margin-bottom: 20px;
-    padding-top: 10px;
+   
 }
 
 h3 {
@@ -497,7 +525,7 @@ h5 {
 }
 
 h6 {
-    font-size: 13px;
+    font-size: 14px;
     letter-spacing: 2px;
     line-height: 17px;
     font-weight: 600;
@@ -621,6 +649,10 @@ button {
         background: rgba(255,255,255,0.85);
         color: #323232;
     }
+.btn-menu {
+    color: #fff;
+    border: none;
+}
 
 .btn-black-line, .btn-white-line, .btn-color-line {
     border: 2px solid;
@@ -725,7 +757,7 @@ button, input, textarea, select {
         outline: none;
         font-weight: 400;
         letter-spacing: 1px;
-        font-size: 13px;
+        font-size: 14px;
         padding: 10px 15px;
         transition: all 0.2s ease 0s;
         -moz-transition: all 0.2s ease 0s;
@@ -755,7 +787,7 @@ textarea {
 
 label {
     color: #323232;
-    font-size: 13px;
+    font-size: 14px;
     margin-bottom: 10px;
     padding-right: 3px;
     margin-top: 6px;
@@ -891,6 +923,10 @@ form label.error {
     padding-bottom: 110px;
 }
 
+.pb-30 {
+    padding-bottom: 30px;
+}
+
 .ptb-15 {
     padding-top: 15px;
     padding-bottom: 15px;
@@ -943,6 +979,11 @@ form label.error {
 .mlr-0 {
     margin-left: 0px;
     margin-right: 0px;
+}
+
+.mlr-5 {
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
 .mt-0 {
@@ -1442,15 +1483,17 @@ form label.error {
         }
 
 .logo--name{
-    /* font-family: 'Oswald', sans-serif; */
-    font-size: 20px;
+    font-size: 22px;
     /* color: #fff; */
     letter-spacing: .5px;
     padding: 0 0 0 10px;
+    text-transform: uppercase;
+    font-weight: 600;
 }
 
 .logo--profession{
     /* color: #43444D; */
+    font-size: 16px;
 }
 
 .logo--profession span{
@@ -2227,7 +2270,7 @@ form label.error {
 .intro-content-inner {
     position: absolute;
     width: 65%;
-    top: 280px;
+    top: 300px;
     left: 0;
     z-index: 2;
 }
@@ -2444,7 +2487,7 @@ form label.error {
     }
 
 .footer .link a {
-    font-size: 13px;
+    font-size: 14px;
     font-weight: 400;
     /*text-transform: uppercase;*/
     letter-spacing: 0;
@@ -2752,65 +2795,6 @@ form label.error {
         right: auto;
     }
 }
-/*-------------------------------------------------------------------------------------------*/
-/*  Pricing       ||---------------------------- */
-/*-------------------------------------------------------------------------------------------*/
-
-.Pricing-box {
-    border: 1px solid #f1f1f1;
-    text-align: center;
-}
-
-    .Pricing-box.highlight {
-        background: #f9f9f9;
-        border: 1px solid #ddd;
-    }
-
-        .Pricing-box.highlight hr {
-            border-color: #ddd;
-        }
-
-.price-title h4, .price-title h5 {
-    margin-top: 0px;
-    margin-bottom: 0px;
-}
-
-.Pricing-box .price {
-    font-size: 50px;
-    font-weight: 700;
-    position: relative;
-}
-
-    .Pricing-box .price .price-sm {
-        font-size: 14px;
-        position: absolute;
-    }
-
-    .Pricing-box .price .price-lg {
-        padding-left: 10px;
-    }
-
-.Pricing-box .price-tenure {
-    font-size: 12px;
-    color: #888;
-    font-weight: 400;
-    padding-top: 8px;
-}
-
-.Pricing-box .pricing-features {
-    font-size: 13px;
-    text-transform: uppercase;
-}
-
-    .Pricing-box .pricing-features ul {
-        list-style: none;
-        padding: 0px;
-        margin: 0px;
-    }
-
-        .Pricing-box .pricing-features ul li {
-            padding: 6px;
-        }
 
 
 /*-------------------------------------------------------------------------------------------*/
@@ -3168,7 +3152,7 @@ form label.error {
 }
 
 .inner-intro {
-    background-color: #f7f7f7;
+    background-color: #fff;
     height: 530px;
     display: block;
     position: relative;
@@ -3759,7 +3743,7 @@ form label.error {
         .sidebar-widget ul li a {
             display: inline-block;
             padding: 4px 0px;
-            font-size: 13px;
+            font-size: 14px;
             color: #323232;
         }
 
@@ -3852,7 +3836,7 @@ form label.error {
                 width: 36px;
                 line-height: 36px;
                 text-align: center;
-                font-size: 13px;
+                font-size: 14px;
             }
 
             .pagination-nav ul li.active a {
@@ -4913,7 +4897,7 @@ ul.project-detail-block, .project-detail-block ul {
 /* Navbar START */
 #top--navbar{
     /* background-color: #354576; */
-    border-bottom: 0.5px solid #fff;
+    /* border-bottom: 0.5px solid #fff; */
 }
 
 .top--navbar {
@@ -4940,7 +4924,7 @@ ul.project-detail-block, .project-detail-block ul {
 
 
 .top--navbar--left i {
-    padding-right: 3px
+    padding-right: 6px
 }
 
 .top--navbar--left i, .top--navbar--contact{
@@ -4949,7 +4933,7 @@ ul.project-detail-block, .project-detail-block ul {
 }
 
 .top--navbar--right a{
-    padding: 4px;
+    /* padding: 4px; */
 }
 
 .top--navbar--right .btn{
@@ -5010,9 +4994,33 @@ ul.project-detail-block, .project-detail-block ul {
 }
 
 /* QUALIFY section END */
+/* --------------------------------------------------------- */
 
+/* OFFER section Start */
+#offer{
+    background-color: #fff;
+}
 
+.offer--box{
+    width: 500px;
+    height: 520px;
+    border: 1px solid #f9f9f9;
+    padding: 20px;
+}
 
+.offer--box li {
+    padding: 10px 0;
+}
+
+.offer--box:nth-child(2n+1) {
+    background: #f9f9f9;
+    height: 450px;
+
+}
+/* OFFER section END */
+/* ---------------------------------------------------------- */
+
+/* CONTACT section Start */
 #contact-section {
     background-color: #43444D;
     color: #fff !important;
