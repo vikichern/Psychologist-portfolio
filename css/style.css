@@ -2901,6 +2901,7 @@ h2::after {
 .quote-author {
     margin-top: 15px;
     width: 100%;
+    color: #333
 }
 
 .quote-author span {
@@ -5098,6 +5099,24 @@ ul.project-detail-block, .project-detail-block ul {
     background-color: #53548D;
     color: #fff;
 }
+
+.about-text--box {
+    position: relative;
+    padding: 30px;
+    z-index: 1;
+}
+
+.about-text--box::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0%;
+    height: 100%;
+    width: 50%;
+    background-color: #B3B4BC;
+    z-index: -1;
+}
+
 /* ABOUT section END */
 
 /* QUALIFY section START */
@@ -5133,9 +5152,13 @@ ul.project-detail-block, .project-detail-block ul {
     padding: 10px 0;
 }
 
+.offer--box li:nth-child(2n+1){
+    color: #7184a5;
+}
+
 .offer--box:nth-child(2n+1) {
     background: #f9f9f9;
-    height: 450px;
+    height: 470px;
 
 }
 /* OFFER section END */
