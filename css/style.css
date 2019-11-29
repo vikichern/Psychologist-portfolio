@@ -4,7 +4,8 @@
 @import url("./plugin/colorbox.css");
 @import url("./plugin/jquery.fs.tipper.css");
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap&subset=latin-ext);
-@import url(https://fonts.googleapis.com/css?family=Karla:400,700&display=swap&subset=latin-ext);
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700&display=swap&subset=latin-ext);
+
 
 
 * BASIC STYLE
@@ -217,10 +218,10 @@ h2 {
 
 
 h2 .section-title-first-letter {
-    background-color: #7261A3;;
+    /* background-color: #7261A3;;
     color: #fff;
     padding-left: 2px;
-    padding-right: 1px;
+    padding-right: 1px; */
 }
 
 h5 img{
@@ -281,7 +282,7 @@ box-shadow: none;
     margin: 5px;
     box-sizing: border-box;
     z-index: 5; */
-    background-color: #43444D;
+    background-color: #7184a5;
 }   
 
 /* .bg-wheat::before, .bg-lavender::before, .bg-thistle::before{
@@ -293,7 +294,7 @@ box-shadow: none;
     bottom: 0;
     height: 100%;
     width: 100%;
-    background-color: #43444D;
+    background-color: #7184a5;
     opacity: 0.3;
     z-index: -1
 } */
@@ -308,7 +309,7 @@ box-shadow: none;
     bottom: -10%;
     height: 10%;
     width: 100%;
-    background-color: #43444D;
+    background-color: #7184a5;
     color: #fff; 
 } */
 .bg-lavender::after{
@@ -450,7 +451,7 @@ p.color, .color, a.color, h1.color, h2.color, h3.color, h4.color, h5.color, h6.c
     }
 
 h1, h2, h3, h4, h5, h6 {
-    color: #323232;
+    color: #7184a5;
     text-transform: uppercase;
     font-weight: 400;
     margin-top: 0px;
@@ -483,18 +484,11 @@ h2 {
 
 h3 {
     font-size: 21px;
-    letter-spacing: 4px;
+    letter-spacing: normal;
     line-height: 32px;
 }
 
-    h2::after {
-        /* content: "";
-        position: absolute;
-        background: url(../img/tree.png) no-repeat center center;
-        background-size: cover; */
-        /* width: 20px;
-        height: 100%; */
-    }
+   
 
     .tree-icon-box {
         display: inline-block;
@@ -1492,7 +1486,7 @@ form label.error {
 .logo--name{
     font-size: 18px;
     line-height: 18px;
-    color: #e6ae49;
+    color: #7184a5;
     letter-spacing: .5px;
     padding: 0 0 0 10px;
     text-transform: uppercase;
@@ -1500,7 +1494,7 @@ form label.error {
 }
 
 .logo--profession{
-    color: #e6ae49;
+    color: #7184a5;
     font-size: 14px;
     padding: 0 0 0 10px;
 }
@@ -1535,15 +1529,70 @@ form label.error {
     /* font-size: 16px; */
     flex-direction: column;
     position: relative;
+    text-transform: none;
+    color: #fff;
+    font-family: 'Lato', sans-serif;
    
 }
 
-.title--proffesion span {
-   /* padding-bottom: 15px */
+.title--proffesion .single--proffesion {
+   font-size: 68px;
+   font-family: 'Lato', sans-serif;
+   display: block;
+   line-height: 68px;
+}
+.title--proffesion .single--proffesion .subtitle--proffesion{
+    font-size: 16px;
+    line-height: 24px;
+    display: block;
+    text-transform: uppercase;
 }
 
 .title--proffesion span:last-child {
     /* padding-bottom: 0px; */
+}
+
+.main--title--profession{
+    margin-left: -5px;
+    display: block;
+}
+.mtp-after {
+    position: relative;
+    padding-bottom: 50px;
+}
+
+.mtp-after::after {
+    content: "";
+    position: absolute;
+    width: 80px;
+    height: 2px; 
+    background-color: #fff;
+    top: 100%;
+    left: 5px;
+}
+
+h2::after {
+    content: "";
+    position: absolute;
+    width: 80px;
+    height: 2px; 
+    background-color: #fff;
+    top: 100%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+.h2-after::after {
+    content: "";
+    position: absolute;
+    width: 80px;
+    height: 2px; 
+    background-color: #7184a5;
+    top: 100%;
+    left: 0;
+    right: 0;
+    /* margin: 0 auto; */
 }
 
 /* .title--proffesion::before{
@@ -2272,11 +2321,12 @@ form label.error {
 }
 
 .intro-content {
-    display: table;
+    display: flex;
     height: 100%;
     width: 100%;
     position: relative;
-    
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -2306,12 +2356,13 @@ form label.error {
 }
 .btn-contact {
     width: 100%;
+    padding-top: 35px
 }
 
 .btn-contact a{
     /* padding-top: 25px; */
     text-align: center;
-    background-color: #354576;
+    background-color: #7184a5;
     color: #fff;
 }
 
@@ -5022,12 +5073,24 @@ ul.project-detail-block, .project-detail-block ul {
     /* padding-top: 0; */
 }
 
+#about .about--story {
+    width: 70%;
+    background-color: #7184a5;
+    color: #fff;
+    padding: 20px;
+}
+
 .about--text{
     flex-direction: column;
 }
 
+.photo-ligmann-inner img {
+    filter: drop-shadow(0 0 15px #333);
+
+}
+
 .btn-about-section a{
-    background-color: #43444D;
+    background-color: #7184a5;
     color: #fff;
 }
 
@@ -5040,7 +5103,7 @@ ul.project-detail-block, .project-detail-block ul {
 /* QUALIFY section START */
 
 #qualify {
-    background-color: #43444D;
+    background-color: #7184a5;
 }
 
 .qualify--title {
@@ -5080,7 +5143,7 @@ ul.project-detail-block, .project-detail-block ul {
 
 /* CONTACT section Start */
 #contact-section {
-    background-color: #43444D;
+    background-color: #7184a5;
     color: #fff !important;
     width: 100%;
 }
@@ -5166,3 +5229,17 @@ ul.project-detail-block, .project-detail-block ul {
     opacity: 0.3;
 }
 /* SECTION Service - Komu Pomagam END */
+
+.row-before {
+    position: relative;
+}
+
+.row-before::before {
+    /* content: "";
+    position: absolute;
+    top: -27px;
+    left: -24px;
+    width: 80px;
+    height: 80px;
+    background-color: #53548D; */
+}
