@@ -4,6 +4,7 @@
 @import url("./plugin/colorbox.css");
 @import url("./plugin/jquery.fs.tipper.css");
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap&subset=latin-ext);
+@import url(https://fonts.googleapis.com/css?family=Karla:400,700&display=swap&subset=latin-ext);
 
 
 * BASIC STYLE
@@ -79,8 +80,9 @@ body {
     line-height: 24px;
     color: #333;
     font-size: 15px;
-    /* font-family: 'Oswald', sans-serif; */
-    font-family: 'Open Sans', sans-serif;
+    /* font-family: 'Oswald', sans-serif;
+    font-family: 'Open Sans', sans-serif; */
+    font-family: 'Karla', sans-serif;
     font-weight: 400;
     letter-spacing: 1px;
     
@@ -262,7 +264,7 @@ box-shadow: none;
    
 }
 .offer--content {
-    min-height: 350px;
+    min-height: 375px;
     margin-bottom: 10px;
 }
 
@@ -368,7 +370,7 @@ p.lead, .lead {
     font-size: 15px;
     font-weight: 400;
     line-height: 24px;
-    padding: 0 20px;
+
 }
 
 p.dark, .dark, a.dark, h1.dark, h2.dark, h3.dark, h4.dark, h5.dark, h6.dark {
@@ -496,11 +498,12 @@ h3 {
 
     .tree-icon-box {
         display: inline-block;
+        padding-bottom: 8px;
     }
 
     .tree-icon {
-        width: 60px;
-        height: 60px;
+        width: 50px;
+        height: 50px;
         padding: 10px;
         background: url(../img/tree.png) no-repeat center center;
         background-size: cover;
@@ -887,6 +890,11 @@ form label.error {
 .plr-0 {
     padding-left: 0 !important;
     padding-right: 0 !important;
+}
+
+.plr-20 {
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .pl-0 {
@@ -1463,7 +1471,6 @@ form label.error {
     .logo a {
         position: relative;
         display: block;
-        width: 250px;
         transition: all .3s ease-out;
         -moz-transition: all .3s ease-out;
         -o-transition: all .3s ease-out;
@@ -1483,8 +1490,9 @@ form label.error {
         }
 
 .logo--name{
-    font-size: 22px;
-    /* color: #fff; */
+    font-size: 18px;
+    line-height: 18px;
+    color: #e6ae49;
     letter-spacing: .5px;
     padding: 0 0 0 10px;
     text-transform: uppercase;
@@ -1492,14 +1500,15 @@ form label.error {
 }
 
 .logo--profession{
-    /* color: #43444D; */
-    font-size: 16px;
+    color: #e6ae49;
+    font-size: 14px;
+    padding: 0 0 0 10px;
 }
 
 .logo--profession span{
-    padding: 0 0 0 10px;
     position: relative;
-    background: #fff;
+    background: #f3f3f3;
+    padding: 0 1px;
 }
 
 /* .logo--profession span::before{
@@ -1659,6 +1668,10 @@ form label.error {
     background-color: #fff;
 }
 
+#navigation .container {
+    padding: 4px 15px 4px 15px;
+}
+
 .nav-menu {
     position: static;
 }
@@ -1677,7 +1690,7 @@ form label.error {
         }
 
             .nav-menu > ul > li > a, .header.no-stick.fixed .nav-menu > ul > li > a, .header.fixed.no-stick .nav-menu > ul > li > a {
-                padding: 40px 0px 40px 20px;;
+                padding: 26px 15px 26px 15px;;
                 display: inline-block;
                 position: relative;
                 font-size: 13px;
@@ -1718,7 +1731,7 @@ form label.error {
 @media all and (max-width: 991px) {
     .nav-menu {
         display: none;
-        text-align: left;
+        /* text-align: left; */
         position: absolute;
         top: 100%;
         left: 0;
@@ -2291,10 +2304,15 @@ form label.error {
 .intro-content-inner .container {
     padding: 0
 }
+.btn-contact {
+    width: 100%;
+}
 
-.btn-contact{
+.btn-contact a{
     /* padding-top: 25px; */
-    text-align: left;
+    text-align: center;
+    background-color: #354576;
+    color: #fff;
 }
 
 
@@ -2802,23 +2820,36 @@ form label.error {
 /*-------------------------------------------------------------------------------------------*/
 
 .container-icon {
-    font-size: 25px;
+    font-size: 30px;
     margin-bottom: 15px;
     color: inherit;
+    width: 100%;
 }
 
 .testimonial {
     max-width: 800px;
     width: 100%;
     margin: 0 auto;
+    z-index: 102;
 }
 
-#quote{
+/* #quote{
     padding-bottom: 0;
+} */
+
+.quote-content-inner {
+    font-size: 30px;
+    line-height: 40px;
+}
+
+.quote-content-inner h6 {
+    letter-spacing: normal;
+    width: 100%;
 }
 
 .quote-author {
     margin-top: 15px;
+    width: 100%;
 }
 
 .quote-author span {
@@ -4566,6 +4597,10 @@ ul.project-detail-block, .project-detail-block ul {
     position: static;
 }
 
+.owl-carousel {
+    z-index: 102;
+}
+
 .owl-carousel.white .owl-controls .owl-page span {
     background: none repeat scroll 0 0 #fff;
 }
@@ -4896,16 +4931,20 @@ ul.project-detail-block, .project-detail-block ul {
 
 /* Navbar START */
 #top--navbar{
-    /* background-color: #354576; */
+    /* background-color: rgba(245,245,245,1); */
     /* border-bottom: 0.5px solid #fff; */
+    background-color: #fff;
+    color: #42474c;
+   
 }
 
 .top--navbar {
     padding: 15px 0 15px 0;
+    border-bottom: 1px solid #f3f3f3;
 }
 
 .top--navbar--left {
-    color: #fff;
+    /* color: #fff; */
 }
 .navbar--box{
    padding: 0 20px 0 0;
@@ -4917,10 +4956,24 @@ ul.project-detail-block, .project-detail-block ul {
 }
 
 .nav-menu-item a {
-    padding-right: 0;
+    /* padding-right: 0; */
     font-weight: 700;
+    text-transform: uppercase;
+}
+.nav-menu-item {
+    position: relative;
 }
 
+.nav-menu-item:hover::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    top: 100%;
+    left: 0;
+    background-color: #e6ae49
+    
+}
 
 
 .top--navbar--left i {
@@ -4928,8 +4981,13 @@ ul.project-detail-block, .project-detail-block ul {
 }
 
 .top--navbar--left i, .top--navbar--contact{
-    color: #fff;
-    font-size: 10px;
+    color: #7184a5;
+    font-size: 12px;
+}
+
+.top--navbar--contact{
+    font-weight: 400;
+
 }
 
 .top--navbar--right a{
@@ -4937,11 +4995,11 @@ ul.project-detail-block, .project-detail-block ul {
 }
 
 .top--navbar--right .btn{
-    font-size: 10px;
+    font-size: 14px;
 }
 .top--navbar--right .btn i {
     color: #fff;
-    font-size: 15px;
+    font-size: 14px;
 }
 
 .span-first-letter{
@@ -5041,6 +5099,50 @@ ul.project-detail-block, .project-detail-block ul {
     color: #fff !important;
     margin: 5px 0;
 }
+
+/* --------------------------------------------------------------- */
+/* SECTION Quote START */
+
+/* SECTION Quote END */
+#quote{
+    position: relative;
+}
+
+#quote::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: url('../img/daylight.jpg') center center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    opacity: 0.3;
+}
+#quote .quote--content {
+    position: relative;
+    padding: 20px 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+}
+
+/* #quote .quote--content::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 50%;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+    background: gray;
+    opacity: 0.3;
+
+} */
+
+
 
 /* SECTION Service - Komu Pomagam START */
 #service{
