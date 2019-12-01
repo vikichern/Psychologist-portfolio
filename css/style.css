@@ -268,8 +268,10 @@ box-shadow: none;
    
 }
 .offer--content {
-    min-height: 375px;
+    min-height: 398px;
+    max-height: 400px;
     margin-bottom: 10px;
+    padding: 30px 0;
 }
 
 .offer--content, .offer--title {
@@ -286,7 +288,26 @@ box-shadow: none;
     box-sizing: border-box;
     z-index: 5; */
     background-color: #7184a5;
+    position: relative;
 }   
+.offer-triangle {
+    position: relative;
+}
+
+.offer-triangle::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 20px 20px 0 20px;
+    border-color: #7184a5 transparent transparent transparent;
+
+}
 
 /* .bg-wheat::before, .bg-lavender::before, .bg-thistle::before{
     content: '';
@@ -5174,21 +5195,20 @@ ul.project-detail-block, .project-detail-block ul {
 }
 
 .offer--box{
-    width: 50%; 
+    width: 50%;
     height: 575px;
     padding: 20px;
-    /* background-color: #7184A5; */
-    /* background-color: #fff; */
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #A9B4C2;
+    background-color: #F2F4F7;
     position: relative;
+    border: 2px solid #fff;
 }
 
 .bg-offer-blue {
-    background-color: #5E6572;
-    color: #fff;
+    background-color: #E9F0F5;
+    color: #333;
 }
 
 .offer--box li {
@@ -5197,43 +5217,45 @@ ul.project-detail-block, .project-detail-block ul {
 .offer--box-icon {
     display: inline-block;
     padding-top: 15px;
-    padding-bottom: 25px;
+    padding-bottom: 15px;
+    position: relative;
+    width: 100%;
 }
 
 
-.offer--box-icon1 {
-    width: 70px;
-    height: 70px;
-    padding: 10px;
-    background: url(../img/thinking.png) no-repeat center center;
-    background-size: cover;
+.offer--box-nr {
+    border: 1px solid #bbb;
+    width: 50px;
+    height: 50px;
+    color: #bbb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;;
+    z-index: 2;
+    background-color: #F2F4F7;
+}
+
+.offer--box .darker-bg{
+    background-color: #E9F0F5;
+}
+
+.offer--box-icon::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    width: 110px;
+    margin: 0 auto;
+    height: 0.1px;
+    transform: translateY(-50%);
+    z-index: 1;
+    background-color: #bbb;
 }
 
 
-.offer--box-icon2 {
-    width: 70px;
-    height: 70px;
-    padding: 10px;
-    background: url(../img/confusion.png) no-repeat center center;
-    background-size: cover;
-    
-}
 
-.offer--box-icon3 {
-    width: 70px;
-    height: 70px;
-    padding: 10px;
-    background: url(../img/growth.png) no-repeat center center;
-    background-size: cover;
-}
-
-.offer--box-icon4 {
-    width: 70px;
-    height: 70px;
-    padding: 10px;
-    background: url(../img/balance.png) no-repeat center center;
-    background-size: cover;
-}
 
 .card__corner {
     position: absolute;
