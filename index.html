@@ -267,17 +267,20 @@
             </div>
         </section>
         <div class="clearfix"></div>
-        <section id="service" class="wow fadeIn ptb">
+        <section id="service" class="wow fadeInUp ptb">
                 <div class="container">
                     <h2 class="h2-after float-left float-none-xs"><span class="section-title-first-letter"></span>Komu Pomagam</h2>
                     <div class="clearfix"></div>
                     <div class="spacer-60"></div>
     
                     <div class="row offer--list--container d-flex justify-content-center align-items-center">
-                        <h3 class="col-md-12 no-after text-center pb-30">
+                        <h3 class="col-md-12 no-after pb-30">
                             Zapraszam na rozmowę osoby, które:
                         </h3>
-                        <div class="offer--box col">
+                        <div class="offer--box col-12 col-md-3 bg-offer-blue d-flex flex-column justify-content-start">
+                            <div class="offer--box-icon d-flex justify-content-center align-items-center">
+                                    <span class="offer--box-icon1"></span>
+                            </div>
                             <ul class="list-none offer--list d-flex flex-column">
                                 <li>- czują się przytłoczone emocjami i myśleniem o przyszłości, doświadczają lęku, paniki, natrętnych myśli</li>
                                 <li>- nie radzą sobie z trudną sytuacją życiową, kryzysem osobistym, partnerskim, rodzinnym </li>
@@ -285,7 +288,10 @@
                                 <li>- odczuwają niezadowolenie ze swojego życia zawodowego, realizacji siebie i swoich możliwości</li>
                             </ul>
                         </div>
-                        <div class="offer--box col">
+                        <div class="offer--box col-12 col-md-3 d-flex flex-column justify-content-start">
+                                <div class="offer--box-icon d-flex justify-content-center align-items-center">
+                                        <span class="offer--box-icon2"></span>
+                                </div>
                             <ul class="list-none offer--list d-flex flex-column">
                                 <li>- cierpią z powodu nawyków utrudniających codzienne funkcjonowanie </li>
                                 <li>- nie potrafią podjąć ważnej życiowej decyzji</li>
@@ -293,7 +299,10 @@
                                 <li>- są ofiarami nadużyć, przemocy, doświadczyli traumy</li>
                             </ul>
                         </div>
-                        <div class="offer--box col">
+                        <div class="offer--box col-12 col-md-3 bg-offer-blue d-flex flex-column justify-content-start">
+                                <div class="offer--box-icon d-flex justify-content-center align-items-center">
+                                        <span class="offer--box-icon3"></span>
+                                </div>
                             <ul class="list-none offer--list d-flex flex-column">
                                 <li>- potrzebują wsparcia w przygotowaniu się do roli rodzica</li>
                                 <li>- przeżywają trudne emocje po porodzie, czują się zagubione i zmęczone</li>
@@ -302,7 +311,10 @@
                                 <li>- borykają się z problemem niepłodności</li>
                             </ul>
                         </div>
-                        <div class="offer--box col">
+                        <div class="offer--box col-12 col-md-3 d-flex flex-column justify-content-start">
+                                <div class="offer--box-icon d-flex justify-content-center align-items-center">
+                                        <span class="offer--box-icon4"></span>
+                                </div>
                             <ul class="list-none offer--list d-flex flex-column">
                                 <li>..a także:</li>
                                 <li>- chcą lepiej budować swoje relacje z innymi</li>
@@ -611,6 +623,7 @@
     <script src="js/plugin/jquery.singlePageNav.js" type="text/javascript"></script>
     <script src="js/contact-form.js" type="text/javascript"></script>
     <script src="https://kit.fontawesome.com/47bc2738a4.js" crossorigin="anonymous"></script>
+    <script src="bower_components/scrollreveal/dist/scrollreveal.min.js"></script>
 
     <script type="text/javascript">
         //  Onepage Nav Elements
@@ -631,6 +644,18 @@
                 console.log('done scrolling');
             }
         });
+
+        // Scroll reveal
+        window.sr = ScrollReveal();
+    sr.reveal('#offer', {
+        reset: true,
+        delay: 300,
+        distance: 0
+    });
+    sr.reveal('h3, p', {
+        reset: true,
+        delay: 300
+    });
     </script>
 
 </body>

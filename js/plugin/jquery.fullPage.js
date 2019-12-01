@@ -49,8 +49,8 @@
     var SLIDE_ACTIVE_SEL =      SLIDE_SEL + ACTIVE_SEL;
     var SLIDES_WRAPPER =        'fp-slides';
     var SLIDES_WRAPPER_SEL =    '.' + SLIDES_WRAPPER;
-    var SLIDES_CONTAINER =      'fp-slidesContainer';
-    var SLIDES_CONTAINER_SEL =  '.' + SLIDES_CONTAINER;
+    var SLIDES_container =      'fp-slidescontainer';
+    var SLIDES_container_SEL =  '.' + SLIDES_container;
     var TABLE =                 'fp-table';
 
     // slide nav
@@ -400,7 +400,7 @@
 
         //trying to use fullpage without a selector?
         else{
-            showError('error', 'Error! Fullpage.js needs to be initialized with a selector. For example: $(\'#myContainer\').fullpage();');
+            showError('error', 'Error! Fullpage.js needs to be initialized with a selector. For example: $(\'#mycontainer\').fullpage();');
         }
 
         //adding internal class names to void problem with common ones
@@ -454,10 +454,10 @@
                 var sliderWidth = numSlides * 100;
                 var slideWidth = 100 / numSlides;
 
-                slides.wrapAll('<div class="' + SLIDES_CONTAINER + '" />');
+                slides.wrapAll('<div class="' + SLIDES_container + '" />');
                 slides.parent().wrap('<div class="' + SLIDES_WRAPPER + '" />');
 
-                $(this).find(SLIDES_CONTAINER_SEL).css('width', sliderWidth + '%');
+                $(this).find(SLIDES_container_SEL).css('width', sliderWidth + '%');
 
                 if(options.controlArrows){
                     createSlideArrows($(this));
@@ -1080,7 +1080,7 @@
             if (options.css3 && options.autoScrolling && !options.scrollBar) {
 
                 var translate3d = 'translate3d(0px, -' + v.dtop + 'px, 0px)';
-                transformContainer(translate3d, true);
+                transformcontainer(translate3d, true);
 
                 setTimeout(function () {
                     afterSectionLoads(v);
@@ -1428,7 +1428,7 @@
             if(options.css3){
                 var translate3d = 'translate3d(-' + destinyPos.left + 'px, 0px, 0px)';
 
-                addAnimation(slides.find(SLIDES_CONTAINER_SEL), options.scrollingSpeed>0).css(getTransforms(translate3d));
+                addAnimation(slides.find(SLIDES_container_SEL), options.scrollingSpeed>0).css(getTransforms(translate3d));
 
                 setTimeout(function(){
                     afterSlideLoads();
@@ -1697,7 +1697,7 @@
         /**
         * Adds a css3 transform property to the container class with or without animation depending on the animated param.
         */
-        function transformContainer(translate3d, animated){
+        function transformcontainer(translate3d, animated){
             if(animated){
                 addAnimation(container);
             }else{
@@ -2022,7 +2022,7 @@
             }
             else if (options.css3) {
                 var translate3d = 'translate3d(0px, -' + top + 'px, 0px)';
-                transformContainer(translate3d, false);
+                transformcontainer(translate3d, false);
             }
             else {
                 container.css('top', -top);
@@ -2116,7 +2116,7 @@
             removeAnimation(container);
 
             //Unwrapping content
-            container.find(TABLE_CELL_SEL + ', ' + SLIDES_CONTAINER_SEL + ', ' + SLIDES_WRAPPER_SEL).each(function(){
+            container.find(TABLE_CELL_SEL + ', ' + SLIDES_container_SEL + ', ' + SLIDES_WRAPPER_SEL).each(function(){
                 //unwrap not being use in case there's no child element inside and its just text
                 $(this).replaceWith(this.childNodes);
             });

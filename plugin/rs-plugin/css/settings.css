@@ -1172,7 +1172,7 @@ img.tp-slider-alternative-image	{	width:100%; height:auto;}
 
 
 /**********************************************
-	-	FULLSCREEN AND FULLWIDHT CONTAINERS	-
+	-	FULLSCREEN AND FULLWIDHT containerS	-
 **********************************************/
 
 .fullscreen-container {
@@ -1516,7 +1516,7 @@ img.tp-slider-alternative-image	{	width:100%; height:auto;}
 	-	TP THUMBS 	-
 *****************************************************************************************************
 
- - tp-thumbs & tp-mask Width is the width of the basic Thumb Container (500px basic settings)
+ - tp-thumbs & tp-mask Width is the width of the basic Thumb container (500px basic settings)
 
  - .bullet width & height is the dimension of a simple Thumbnail (basic 100px x 50px)
 
@@ -1524,14 +1524,14 @@ img.tp-slider-alternative-image	{	width:100%; height:auto;}
 
 
 .tp-bullets.tp-thumbs						{	z-index:1000; position:absolute; padding:3px;background-color:#fff;
-												width:500px;height:50px; 			/* THE DIMENSIONS OF THE THUMB CONTAINER */
+												width:500px;height:50px; 			/* THE DIMENSIONS OF THE THUMB container */
 												margin-top:-50px;
 											}
 
 
 .fullwidthbanner-container .tp-thumbs		{  padding:3px}
 
-.tp-bullets.tp-thumbs .tp-mask				{	width:500px; height:50px;  			/* THE DIMENSIONS OF THE THUMB CONTAINER */
+.tp-bullets.tp-thumbs .tp-mask				{	width:500px; height:50px;  			/* THE DIMENSIONS OF THE THUMB container */
 												overflow:hidden; position:relative}
 
 

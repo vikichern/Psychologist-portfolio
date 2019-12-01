@@ -70,8 +70,8 @@
                     }
                     return false;
                 }());
-                // CONTROLSCONTAINER:
-                if (slider.vars.controlsContainer !== "") slider.controlsContainer = $(slider.vars.controlsContainer).length > 0 && $(slider.vars.controlsContainer);
+                // CONTROLScontainer:
+                if (slider.vars.controlscontainer !== "") slider.controlscontainer = $(slider.vars.controlscontainer).length > 0 && $(slider.vars.controlscontainer);
                 // MANUAL:
                 if (slider.vars.manualControls !== "") slider.manualControls = $(slider.vars.manualControls).length > 0 && $(slider.vars.manualControls);
 
@@ -222,8 +222,8 @@
                         }
                     }
 
-                    // CONTROLSCONTAINER:
-                    (slider.controlsContainer) ? $(slider.controlsContainer).append(slider.controlNavScaffold) : slider.append(slider.controlNavScaffold);
+                    // CONTROLScontainer:
+                    (slider.controlscontainer) ? $(slider.controlscontainer).append(slider.controlNavScaffold) : slider.append(slider.controlNavScaffold);
                     methods.controlNav.set();
 
                     methods.controlNav.active();
@@ -275,7 +275,7 @@
                 },
                 set: function () {
                     var selector = (slider.vars.controlNav === "thumbnails") ? 'img' : 'a';
-                    slider.controlNav = $('.' + namespace + 'control-nav li ' + selector, (slider.controlsContainer) ? slider.controlsContainer : slider);
+                    slider.controlNav = $('.' + namespace + 'control-nav li ' + selector, (slider.controlscontainer) ? slider.controlscontainer : slider);
                 },
                 active: function () {
                     slider.controlNav.removeClass(namespace + "active").eq(slider.animatingTo).addClass(namespace + "active");
@@ -296,10 +296,10 @@
                 setup: function () {
                     var directionNavScaffold = $('<ul class="' + namespace + 'direction-nav"><li><a class="' + namespace + 'prev" href="#">' + slider.vars.prevText + '</a></li><li><a class="' + namespace + 'next" href="#">' + slider.vars.nextText + '</a></li></ul>');
 
-                    // CONTROLSCONTAINER:
-                    if (slider.controlsContainer) {
-                        $(slider.controlsContainer).append(directionNavScaffold);
-                        slider.directionNav = $('.' + namespace + 'direction-nav li a', slider.controlsContainer);
+                    // CONTROLScontainer:
+                    if (slider.controlscontainer) {
+                        $(slider.controlscontainer).append(directionNavScaffold);
+                        slider.directionNav = $('.' + namespace + 'direction-nav li a', slider.controlscontainer);
                     } else {
                         slider.append(directionNavScaffold);
                         slider.directionNav = $('.' + namespace + 'direction-nav li a', slider);
@@ -344,10 +344,10 @@
                 setup: function () {
                     var pausePlayScaffold = $('<div class="' + namespace + 'pauseplay"><a></a></div>');
 
-                    // CONTROLSCONTAINER:
-                    if (slider.controlsContainer) {
-                        slider.controlsContainer.append(pausePlayScaffold);
-                        slider.pausePlay = $('.' + namespace + 'pauseplay a', slider.controlsContainer);
+                    // CONTROLScontainer:
+                    if (slider.controlscontainer) {
+                        slider.controlscontainer.append(pausePlayScaffold);
+                        slider.pausePlay = $('.' + namespace + 'pauseplay a', slider.controlscontainer);
                     } else {
                         slider.append(pausePlayScaffold);
                         slider.pausePlay = $('.' + namespace + 'pauseplay a', slider);
@@ -1085,7 +1085,7 @@
         playText: "Play",               //String: Set the text for the "play" pausePlay item
 
         // Special properties
-        controlsContainer: "",          //{UPDATED} jQuery Object/Selector: Declare which container the navigation elements should be appended too. Default container is the FlexSlider element. Example use would be $(".flexslider-container"). Property is ignored if given element is not found.
+        controlscontainer: "",          //{UPDATED} jQuery Object/Selector: Declare which container the navigation elements should be appended too. Default container is the FlexSlider element. Example use would be $(".flexslider-container"). Property is ignored if given element is not found.
         manualControls: "",             //{UPDATED} jQuery Object/Selector: Declare custom control navigation. Examples would be $(".flex-control-nav li") or "#tabs-nav li img", etc. The number of elements in your controlNav should match the number of slides/tabs.
         sync: "",                       //{NEW} Selector: Mirror the actions performed on this slider with another slider. Use with care.
         asNavFor: "",                   //{NEW} Selector: Internal property exposed for turning the slider into a thumbnail navigation for another slider

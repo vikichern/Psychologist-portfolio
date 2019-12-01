@@ -82,7 +82,7 @@
 					fullWidth:"off",						// Turns On or Off the Fullwidth Image Centering in FullWidth Modus
 					fullScreen:"off",
 					minFullScreenHeight:0,					// The Minimum FullScreen Height
-					fullScreenOffsetContainer:"",			// Size for FullScreen Slider minimising Calculated on the Container sizes
+					fullScreenOffsetcontainer:"",			// Size for FullScreen Slider minimising Calculated on the container sizes
 					fullScreenOffset:"0",					// Size for FullScreen Slider minimising
 					dottedOverlay:"none",					//twoxtwo, threexthree, twoxtwowhite, threexthreewhite
 
@@ -282,7 +282,7 @@
 		revnext: function(options) {
 					return this.each(function() {
 
-						// CATCH THE CONTAINER
+						// CATCH THE container
 						var container=jQuery(this);
 						if (container!=undefined && container.length>0 && jQuery('body').find('#'+container.attr('id')).length>0)
 							container.parent().find('.tp-rightarrow').click();
@@ -295,7 +295,7 @@
 		// METHODE RESUME
 		revprev: function(options) {
 					return this.each(function() {
-						// CATCH THE CONTAINER
+						// CATCH THE container
 						var container=jQuery(this);
 						if (container!=undefined && container.length>0 && jQuery('body').find('#'+container.attr('id')).length>0)
 							container.parent().find('.tp-leftarrow').click();
@@ -305,14 +305,14 @@
 
 		// METHODE LENGTH
 		revmaxslide: function(options) {
-						// CATCH THE CONTAINER
+						// CATCH THE container
 						return jQuery(this).find('>ul:first-child >li').length;
 				},
 
 
 		// METHODE CURRENT
 		revcurrentslide: function(options) {
-						// CATCH THE CONTAINER
+						// CATCH THE container
 						var container=jQuery(this);
 						if (container!=undefined && container.length>0 && jQuery('body').find('#'+container.attr('id')).length>0) {
 							var bt = container.parent().find('.tp-bannertimer');
@@ -323,7 +323,7 @@
 
 		// METHODE CURRENT
 		revlastslide: function(options) {
-						// CATCH THE CONTAINER
+						// CATCH THE container
 						var container=jQuery(this);
 						if (container!=undefined && container.length>0 && jQuery('body').find('#'+container.attr('id')).length>0) {
 							var bt = container.parent().find('.tp-bannertimer');
@@ -336,7 +336,7 @@
 		// METHODE JUMP TO SLIDE
 		revshowslide: function(slide) {
 					return this.each(function() {
-						// CATCH THE CONTAINER
+						// CATCH THE container
 						var container=jQuery(this);
 						if (container!=undefined && container.length>0 && jQuery('body').find('#'+container.attr('id')).length>0) {
 							container.data('showus',slide);
@@ -486,7 +486,7 @@
 									if (!jQuery.support.transition)
 										jQuery.fn.transition = jQuery.fn.animate;
 
-									// CATCH THE CONTAINER
+									// CATCH THE container
 
 
 									 // LOAD THE YOUTUBE API IF NECESSARY
@@ -776,7 +776,7 @@
 										container.find('.tp-scrollbelowslider').on('click',function() {
 												var off=0;
 												try{
-												 	off = jQuery('body').find(opt.fullScreenOffsetContainer).height();
+												 	off = jQuery('body').find(opt.fullScreenOffsetcontainer).height();
 												 } catch(e) {}
 												try{
 												 	off = off - parseInt(jQuery(this).data('scrolloffset'),0);
@@ -918,7 +918,7 @@
 			}
 
 		//////////////////////////
-		//	CONTAINER RESIZED	//
+		//	container RESIZED	//
 		/////////////////////////
 		var containerResized = function (container,opt) {
 
@@ -1637,9 +1637,9 @@
 						var cow = opt.container.parent().width();
 						var coh = jQuery(window).height();
 
-						if (opt.fullScreenOffsetContainer!=undefined) {
+						if (opt.fullScreenOffsetcontainer!=undefined) {
 							try{
-								var offcontainers = opt.fullScreenOffsetContainer.split(",");
+								var offcontainers = opt.fullScreenOffsetcontainer.split(",");
 								jQuery.each(offcontainers,function(index,searchedcont) {
 									coh = coh - jQuery(searchedcont).outerHeight(true);
 									if (coh<opt.minFullScreenHeight) coh=opt.minFullScreenHeight;
@@ -1703,7 +1703,7 @@
 
 			container.find('.tp-caption').each(function() { jQuery(this).addClass(jQuery(this).data('transition')); jQuery(this).addClass('start') });
 
-			// PREPARE THE UL CONTAINER TO HAVEING MAX HEIGHT AND HEIGHT FOR ANY SITUATION
+			// PREPARE THE UL container TO HAVEING MAX HEIGHT AND HEIGHT FOR ANY SITUATION
 			container.find('>ul:first').css({overflow:'hidden',width:'100%',height:'100%',maxHeight:container.parent().css('maxHeight')}).addClass("tp-revslider-mainul");
 			if (opt.autoHeight=="on") {
 			   container.find('>ul:first').css({overflow:'hidden',width:'100%',height:'100%',maxHeight:"none"});
@@ -1742,7 +1742,7 @@
 				}
 			});
 
-			// RESOLVE OVERFLOW HIDDEN OF MAIN CONTAINER
+			// RESOLVE OVERFLOW HIDDEN OF MAIN container
 			container.parent().css({'overflow':'visible'});
 
 

@@ -28,7 +28,7 @@ $(function () {
             hideTimerBar: "off",
             fullWidth: "off",
             fullScreen: "on",
-            fullScreenOffsetContainer: "",
+            fullScreenOffsetcontainer: "",
             navigationStyle: "preview4",
             navigationType: "none",
         });
