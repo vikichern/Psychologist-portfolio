@@ -3,9 +3,7 @@
 @import url("./plugin/mediaelementplayer.css");
 @import url("./plugin/colorbox.css");
 @import url("./plugin/jquery.fs.tipper.css");
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap&subset=latin-ext);
-@import url(https://fonts.googleapis.com/css?family=Lato:400,700&display=swap&subset=latin-ext);
-@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700&display=swap&subset=latin-ext);
+@import url(https://fonts.googleapis.com/css?family=Muli|Nunito|Quicksand|Raleway|Work+Sans&display=swap&subset=latin-ext);
 
 
 
@@ -61,7 +59,7 @@
 
 ::-moz-selection {
     background-color: #e6ae49;
-    color: #FFF;
+    color: #fff;
 }
 
 ::selection {
@@ -82,13 +80,11 @@ body {
     line-height: 24px;
     color: #333;
     font-size: 15px;
-    /* font-family: 'Oswald', sans-serif; */
-    font-family: 'Open Sans', sans-serif;
-    /* font-family: 'Karla', sans-serif; */
-    /* font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; */
     font-weight: 400;
     letter-spacing: 1px;
-    
+
+    font-family: 'Muli', sans-serif;
+
 }
 
 img {
@@ -540,7 +536,7 @@ h1.large {
     line-height: normal;
     font-weight: 600;
     /* font-family: 'Poppins', sans-serif; */
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Muli', sans-serif;
     letter-spacing: 1px;
     text-align: center;
     text-transform: uppercase;
@@ -739,7 +735,7 @@ button, html input[type="button"], input[type="reset"], input[type="submit"] {
 
 button, input, textarea, select {
     /* font-family: 'Poppins', sans-serif; */
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Muli', sans-serif;
     font-size: 12px;
 }
 
@@ -1491,7 +1487,7 @@ form label.error {
 .logo--name{
     font-size: 18px;
     line-height: 18px;
-    color: #7184a5;
+    color: #fff;
     letter-spacing: .5px;
     
     text-transform: uppercase;
@@ -1659,7 +1655,7 @@ form label.error {
 
 .header.header-transparent .nav-menu > ul > li > a,
 .header.header-transparent .nav-icons > * {
-    color:#354576;
+    color:#fff;
     transition: all .3s ease-out;
     -moz-transition: all .3s ease-out;
     -o-transition: all .3s ease-out;
@@ -1726,7 +1722,7 @@ form label.error {
     Navigation Menu 
 ------------------------------------------------------------*/
 #navigation {
-    background-color: #fff;
+    /* background-color: #fff; */
 }
 
 #navigation .container {
@@ -5023,7 +5019,7 @@ ul.project-detail-block, .project-detail-block ul {
 }
 
 .top--navbar {
-    padding: 15px 0 15px 0;
+    padding: 6px 0 6px 0;
     border-bottom: 1px solid #f3f3f3;
 }
 
@@ -5032,17 +5028,15 @@ ul.project-detail-block, .project-detail-block ul {
 }
 .navbar--box{
    padding: 0 20px 0 0;
-   /* border-left: 1px solid #fff;
-   border-right: 1px solid #fff; */
 }
 .navbar--box--right{
     border-left: none;
 }
 
 .nav-menu-item a {
-    /* padding-right: 0; */
+   
     font-weight: 700;
-    text-transform: uppercase;
+ 
 }
 .nav-menu-item {
     position: relative;
@@ -5090,6 +5084,51 @@ ul.project-detail-block, .project-detail-block ul {
 
 }
 /* Navbar END */
+
+
+/* BEFORE-ABOUT section START --------------------------------------- */ 
+
+#before-about {
+    overflow: hidden;
+}
+
+#before-about .section {
+    background-color: #F2F4F7;
+    overflow: hidden;
+}
+
+
+.about-text--box {
+    position: relative;
+    padding: 40px 10px;
+    margin: 0;
+    z-index: 1;
+    display: block;
+
+}
+
+.about-text--box::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    background-color: #F2F4F7;
+    top: 0;
+    left: 0;
+    right: -1000px;
+    z-index: -1;
+}
+
+.about-text--inner {
+    padding-left: 20px;
+    display: block;
+}
+
+.about-text--inner:last-child {
+    margin: 0;
+    display: block;
+}
+
+/* BEFORE-ABOUT section END --------------------------------------- */ 
 
 
 /* MAIN section START */
@@ -5150,52 +5189,20 @@ ul.project-detail-block, .project-detail-block ul {
     color: #fff;
 }
 
-.about-text--box {
-    position: relative;
-    padding: 40px 10px;
-    z-index: 1;
-    display: block;
-}
-
-.about-text--box::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-    width: 80px;
-    border-top: 2px solid #7184a5;
-    
-    z-index: -1;
-}
-
-.about-text--box::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-    width: 80px;
-    border-bottom: 2px solid #7184a5;
-    z-index: -1;
-}
 
 
-}
 
-.about-text--inner:last-child {
-    margin: 0;
-    display: block;
-}
+
+
+
+
 
 /* ABOUT section END */
 
 /* QUALIFY section START */
 
 #qualify {
-    background-color: #7184a5;
+    background-color: #466179;
 }
 
 .qualify--title {
@@ -5228,6 +5235,7 @@ ul.project-detail-block, .project-detail-block ul {
 
 .offer--box--border {
     padding: 0;
+    border: 2px solid #fff;
 }
 
 .offer--box--border .offer--box-icon {
@@ -5316,7 +5324,7 @@ ul.project-detail-block, .project-detail-block ul {
 }
 
 #contact-section .adress-data {
-    background-color: #E9F0F5;
+    background-color: #f9f9f9;
     padding: 0;
     margin: 0;
 }
